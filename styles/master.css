@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 
 body {
-    background-color: #333533;
-    font-family: 'Quicksand, sans-serif';
+    background-color: #f0f0f0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 a {
@@ -12,451 +12,55 @@ a {
 
 ul {
     list-style-type: none;
-}
-
-h1 {
-    font-weight: bolder;
-    font-size: 40px;
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    color: #E8EDDF
-}
-
-.navbar {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    background-color: #242423;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
 }
 
-.navbar-item {
+.navbar {    
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;    
+    border-radius: 10px;    
+}
+
+.navbar-item {    
     padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: #E8EDDF;
-    transition: background-color 300ms ease-in-out;
+    margin: 3px;
+    color: #353535;
+    transition: all 300ms ease-in-out;    
 }
 
 .navbar-item:hover {
-    background-color: #111111;
-
+    background-color: #0078da;
+    color: #f1f1f1;
+    border-radius: 7px;
 }
 
 .active {
     font-weight: bold;
-    background-color:  #333533;
-
-}
-
-.image-resizer {
-    height: 900px;
-    width: 100%;
-}
-
-.image-resizer-2 {
-    height: 700px;
-    width: 107%;
-    left: 0;
-}
-
-.image-resizer-3 {
-    height: 700px;
-    width: 100%;
-    left: 0;
-}
-
-.text-image-section {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: center;
-    color: #ffffff;
-    transition: all 1s ease-in;
-}
-
-.split-section {
-    display: flex;
-}
-
-.split-section-image {
-    left: 0;
-}
-
-.split-section-text {
-    text-align: center;
-    color: #e8eddf;
-    padding: 3em;
-    font-size: 30px;
-    width: 50%;
-    justify-content: center;
-}
-
-.text-left {
-    margin-left: 35px;
-}
-
-.text-right {
-
-    margin-right: 35px;
-}
-
-.full-width-section {
-    display: flex;
-    justify-content: center;
-    background-color: #242423;
-}
-
-.centered {
-    position: absolute;
-    top: 40%;
-    left: 53%;
-    transform: translate(-50%,-50%);
-    font-size: 40px;
-}
-
-.shade {
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.list-section {
-    background-color: #252422;
-    border-radius: 10px;
-    padding: 20px;
-    width: 98%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.list-title {
-    padding: 20px;
-    margin: 20px;
-    font-size: 2em;
-    font-weight: bolder;
-    text-align: center;
-    color: #e8eddf;
-}
-
-
-
-
-.book-link {
-    padding: 15px;
-    background-color: #f5cb5c;
-    margin: 15px;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: normal;
-    text-align: left;
-}
-
-.book-link-item {
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
-.book-item {
-    width: 85%;
-    padding-right: 5px;
-}
-
-footer {
-    background-color: #242423;
-
-}
-
-
-.book-link div div a img {
-    transition: all 1s ease-in-out;
-}
-
-.book-link div div a img:hover {
-    height: 42px;
-    width: 82px;
-}
-
-.name-section {
-    color: #e8eddf;
-    text-align: center;
-    padding: 20px;
-}
-
-.title {
-    font-size: 40px;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.subtitle {
-    font-size: 20px;
-    font-weight: normal;
-    padding-top: 20px;
-}
-
-.image-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.mypic {
-    width: 250px;
-    height: 250px;
-}
-
-.book-list {
-    display: flex;
-}
-
-.icon-section {
-    display: flex;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon {
-    padding-right: 40px;
-}
-
-.icon-section div {
-    padding: 20px;
-    padding-top: 10px;
-}
-
-.icon-section div img {
-    padding: 10px;
-    padding-top: 0px;
-}
-
-.split-section-text p a {
-    color: #f5cb5c;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-}
-
-.button {
-    background-color: #f5cb5c;
-    font-size: 20px;
+    background-color:  #0069be;
+    color: #f1f1f1;
     border-radius: 7px;
-    padding: 16px;
-    width: 50%;
-    margin-left: 30px;
 }
 
-.button a {
-    color: #242423;
-    transition: all 200ms ease-in-out;
-}
-
-.button a:hover {
-    color: white;
-    font-weight: bold;
-
-}
-
-.book-link-item. div a img {
-    height: 100px;
-    width: auto;
-}
-
-.info-section {
-    background-color: #242423;
-    display: flex;
-    padding: 2em;
-    margin: 2em;
-    border-radius: 15px;
-    justify-content: center;
-}
-
-.info-section-container {
-    background-color: #f5cb5c;
-    padding: 10px;
-    margin: 5em;
-    border-radius: 10px;
-    width: 50%;
-}
-
-.info-section-container-white {
-    background-color: #e8eddf;
-    padding: 10px;
-    margin: 5em;
-    border-radius: 10px;
-    width: 50%;
+.quote-section {
     display: flex;
     justify-content: center;
 }
 
-.info-section-container-white-2 {
-    background-color: #e8eddf;
+.quote-text {
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+
+#quoteBox {
     padding: 10px;
-    margin: 5em;
-    border-radius: 10px;
-    width: 50%;
-}
-
-.info-section-container div h4 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-}
-
-.info-section-container-white div h4 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-}
-
-.info-section-container-white-2 div h4 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-}
-
-
-.dark-button {
-    display: inline;
-    background-color: #242423;
-    color: #f5cb5c;
-    padding: 5px;
-    border-radius: 4px;
-    font-weight: bold;
-    margin-right: 7px;
-
-}
-
-.school-name {
-    font-size: 22px;
-    padding-right: 30px;
-    padding-left: 10px;
-    margin-right: 20px;
-    margin-left: 10px;
-}
-
-.school-time {
-    padding: 0px;
-    font-weight: light;
-    margin-top: 7px;
-    padding-right: 30px;
-    padding-left: 10px;
-    margin-right: 20px;
-    margin-left: 10px;
-
-}
-
-.school-subject {
-    padding: 0px;
-    font-weight: normal;
-    padding-right: 30px;
-    padding-left: 10px;
-    margin-right: 20px;
-    margin-left: 10px;
-}
-
-table {
-    padding: 40px;
-    padding-top: 5px;
-    margin-top: 10px;
-    border-spacing: 20px 40px;
-}
-
-tr {
-    padding: 40px;
-    margin: 40px;
-}
-
-td {
-
-}
-
-.td-yellow {
-    font-size: 25px;
-    text-align: center;
-    background-color: #242423;
-    color: #f5cb5c;
-    padding: 10px;
-    border-radius: 7px;
-    font-weight: bold;
-    margin: 20px;
-}
-
-.td-dark {
-    font-size: 25px;
-    text-align: center;
-    background-color: #f5cb5c;
-    color: #242423;
-    padding: 10px;
-    border-radius: 7px;
-    font-weight: bold;
-    margin: 20px;
-}
-
-.hobbies-link-item {
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
-.hobbies-book-item {
-    width: 85%;
-    padding-right: 5px;
-}
-
-.project-desc {
-    padding: 0px;
-    font-weight: normal;
-    margin-top: 10px;
-    padding-right: 30px;
-    padding-left: 10px;
-    margin-right: 20px;
-    margin-left: 10px;
-
-}
-
-.hobbies {
-    display: flex;
-    padding: 20px;
-    margin: 20px;
-    font-size: 22px;
-    justify-content: space-between;
-}
-
-.go-right {
-    align-items: flex-end;
-}
-
-.lm {
-    font-size: 20px;
-    color: #f5cb5c;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-}
-
-.dark-button-2 {
-    display: inline;
-    background-color: #242423;
-    color: #e8eddf;
-    padding: 5px;
-    border-radius: 4px;
-    font-weight: bold;
-    margin-right: 7px;
-
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border-right: 3px solid #bdbdbd;
+    border-bottom: 3px solid #bdbdbd;
 }
