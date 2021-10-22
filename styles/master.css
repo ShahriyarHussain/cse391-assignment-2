@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 
-body {
-    background-color: #f0f0f0;
+* {
     font-family: 'Quicksand', sans-serif;
+}
+
+button {
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-weight: bold;
 }
 
 a {
@@ -11,17 +16,19 @@ a {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none;       
     position: fixed;
     width: 100%;
     top: 0;
 }
 
+/*navbar customization here*/
+
 .navbar {    
     font-size: 20px;
     display: flex;
-    justify-content: center;
-    position: sticky;    
+    justify-content: center;    
+    position: sticky; 
     border-radius: 10px;    
 }
 
@@ -45,17 +52,24 @@ ul {
     border-radius: 7px;
 }
 
+/* quote section */
+
 .quote-section {
     display: flex;
     justify-content: center;
+    flex-direction: column;    
 }
+
+/* Quote text */
 
 .quote-text {
     margin-top: 10%;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-#quoteBox {
+#quote-box {
     padding: 10px;
     padding-right: 50px;
     padding-left: 50px;
@@ -63,4 +77,52 @@ ul {
     border-radius: 5px;
     border-right: 3px solid #bdbdbd;
     border-bottom: 3px solid #bdbdbd;
+    text-align: center;
 }
+
+/* Quote buttons */
+
+.quote-button-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.quote-button {     
+    border: 0;  
+    border-radius: 3px;
+    border-right: 3px solid #bdbdbd;
+    border-bottom: 3px solid #bdbdbd;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.bg-rouge {
+    background-color: rgb(231, 161, 161);
+}
+
+.bg-lyla {
+    background-color: #f5a7e1;
+}
+
+.bg-noire {
+    background-color: #5e5e5e;
+    color: #f1f1f1;
+}
+
+.bg-imola {
+    background-color: #a0d8c1;    
+}
+
+/* Quote Buttons Animations */
+
+div button:hover {  
+    cursor: pointer;  
+    border-right: 5px solid #bdbdbd;
+    border-bottom: 5px solid #bdbdbd;
+    transition: all 100ms ease-in-out;
+}
+
+
+

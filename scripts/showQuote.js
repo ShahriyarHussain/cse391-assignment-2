@@ -11,5 +11,30 @@ var listOfQuotes = [
     '“Genius is one percent inspiration, ninety-nine percent perspiration.” ― Thomas A. Edison',
 ];
 
-document.getElementById(
-    "quoteBox").innerHTML=listOfQuotes[Math.floor(Math.random()* 9)];;
+
+
+function showQuote(currentColor) {  
+
+    document.getElementById(
+        "quote-box").innerHTML=listOfQuotes[Math.floor(Math.random()* 9)];;
+
+    document.getElementById(
+        "quote-box").style.color="#353535";      
+
+    if (currentColor == 'rouge') {
+            document.getElementById(
+        "quote-box").style.background="rgb(231, 161, 161)";
+    } else if (currentColor == 'lyla') {
+        document.getElementById(
+        "quote-box").style.background="#f5a7e1";
+    } else if (currentColor == 'noire') {
+        document.getElementById(
+        "quote-box").style.background="#5e5e5e";
+        document.getElementById(
+            "quote-box").style.color="#f1f1f1";
+    } else {
+        document.getElementById(
+            "quote-box").style.background="#a0d8c1";
+    }
+    
+};
