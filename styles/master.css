@@ -81,8 +81,6 @@ ul {
     padding-left: 50px;
     background-color: rgb(233, 233, 233);
     border-radius: 5px;
-    border-right: 3px solid #bdbdbd;
-    border-bottom: 3px solid #bdbdbd;
     text-align: center;
 }
 
@@ -96,9 +94,7 @@ ul {
 
 .quote-button {     
     border: 0;  
-    border-radius: 3px;
-    border-right: 3px solid #bdbdbd;
-    border-bottom: 3px solid #bdbdbd;
+    border-radius: 3px;    
     padding: 10px;
     margin: 10px;
     font-size: 20px;
@@ -125,8 +121,8 @@ ul {
 
 .quote-button-group button:hover {  
     cursor: pointer;  
-    border-right: 5px solid #bdbdbd;
-    border-bottom: 5px solid #bdbdbd;
+    border-right: 3px solid #bdbdbd;
+    border-bottom: 3px solid #bdbdbd;
     transition: all 100ms ease-in-out;
 }
 
@@ -150,9 +146,7 @@ ul {
     padding: 19px;
     padding-left: 10%;
     padding-right: 10%;
-    border: 0;
-    border-right: 3px solid #bdbdbd;
-    border-bottom: 3px solid #bdbdbd;
+    border: 0;    
 }
 
 .convert-bar div span {       
@@ -179,12 +173,6 @@ ul {
 select:hover {    
     cursor: pointer;
     background-color: rgb(219, 219, 219);;
-}
-
-.convert-bar:hover {
-    border-right: 5px solid #bdbdbd;
-    border-bottom: 5px solid #bdbdbd;
-    transition: border 200ms ease-out;
 }
 
 /* Converter Go button styling */
@@ -220,9 +208,7 @@ select:hover {
 .mx-inner {
     background-color: bisque;
     border-radius: 7px;
-    border: 0;
-    border-right: 2px solid #bdbdbd;
-    border-bottom: 2px solid #bdbdbd;
+    border: 0;    
     padding: 20px;
 }
 
