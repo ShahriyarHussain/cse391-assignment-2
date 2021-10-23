@@ -14,6 +14,7 @@
             <li><a class="active navbar-item" href="#">Hero Converter</a></li>
             <li><a class="navbar-item" href="./min_max.html">Min-Max</a></li>
             <li><a class="navbar-item" href="./magic.html">Magic !</a></li>
+            <li><button id="theme-btn" class="navbar-item" onclick="changeTheme()">Dark</button></li>
         </ul>
     </header>
 
@@ -21,7 +22,7 @@
         <div class="convert-bar">
             <div>            
                 <span>Convert</span>
-                <input onKeyDown="handleKey()" id="convert-input" type="number" placeholder="Enter Value">
+                <input onKeyDown="handleKey()" id="convert-input" type="number" placeholder="Enter value" size="40">
             </div>
             <div>            
                 <select name="cars" id="convert">
@@ -37,7 +38,8 @@
 
     <footer>        
     </footer>
-    <script src="/scripts/converter.js"></script> 
+    <script src="/scripts/converter.js"></script>
+    <script src="/scripts/theme.js"></script> 
 </body>
 
 </html>

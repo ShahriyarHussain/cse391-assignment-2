@@ -24,18 +24,24 @@ ul {
 
 /*navbar customization here*/
 
+#theme-btn {
+    text-decoration: none;
+    border: 0;    
+}
+
 .navbar {    
     font-size: 20px;
     display: flex;
     justify-content: center;    
-    position: sticky; 
-    border-radius: 10px;    
+    position: sticky;     
 }
 
 .navbar-item {    
+    background-color: #ffffff;    
     padding: 20px;
     margin: 3px;
     color: #353535;
+    border-radius: 10px;    
     transition: all 300ms ease-in-out;    
 }
 
@@ -126,7 +132,7 @@ ul {
 
 /* Quote Button styling ends here */
 
-/* Selection Styling button styling */
+/* Converter Styling, button styling starts here */
 
 .convert-section {
     margin-top: 10%;
@@ -149,14 +155,6 @@ ul {
     border-bottom: 3px solid #bdbdbd;
 }
 
-/* conver section animation */
-
-.convert-bar:hover {
-    border-right: 5px solid #bdbdbd;
-    border-bottom: 5px solid #bdbdbd;
-    transition: border 200ms ease-out;
-}
-
 .convert-bar div span {       
     padding: 5px;
 }
@@ -169,17 +167,27 @@ ul {
     padding: 11px;
 }
 
-select:hover {    
-    cursor: pointer;
-    background-color: rgb(219, 219, 219);;
-}
-
 .convert-bar select {
     border-radius: 7px;    
     font-size: 21px;
     padding: 5px;
     background-color: rgb(248, 248, 248);
 }
+
+/* convert section animation */
+
+select:hover {    
+    cursor: pointer;
+    background-color: rgb(219, 219, 219);;
+}
+
+.convert-bar:hover {
+    border-right: 5px solid #bdbdbd;
+    border-bottom: 5px solid #bdbdbd;
+    transition: border 200ms ease-out;
+}
+
+/* Converter Go button styling */
 
 #go-button {
     font-weight: normal;
@@ -195,4 +203,57 @@ select:hover {
 #go-button:hover {
     cursor: pointer;
     background-color: rgb(230, 230, 230);;
+}
+
+
+/* min-max styling starts here */
+
+.fl-display {
+    display: flex;        
+}
+
+.mx-section {
+    justify-content: center;
+    margin-top: 10%;    
+}
+
+.mx-inner {
+    background-color: bisque;
+    border-radius: 7px;
+    border: 0;
+    border-right: 2px solid #bdbdbd;
+    border-bottom: 2px solid #bdbdbd;
+    padding: 20px;
+}
+
+.mx-row {    
+    flex-direction: row;    
+}
+
+.mx-column {    
+    flex-direction: column;
+    justify-content: start;    
+}
+
+.mxcl-right {
+    align-items: flex-end;    
+}
+
+.mxcl-left {
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.mxcl-left input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.mxcl-left span {
+    font-weight: bold;
+}
+
+.fl-display div span {
+    margin-top: 10px;
+    font-size: 25px;
 }

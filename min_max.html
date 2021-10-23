@@ -14,11 +14,36 @@
             <li><a class="navbar-item" href="./hero_conv.html">Hero Converter</a></li>
             <li><a class="active navbar-item" href="#">Min-Max</a></li>
             <li><a class="navbar-item" href="./magic.html">Magic !</a></li>
+            <li><button id="theme-btn" class="navbar-item" onclick="changeTheme()">Dark</button></li>
         </ul>
-    </header>    
+    </header>
+    
+    <section class="fl-display mx-section">
+        <div class="fl-display mx-row mx-inner">
+            <div class="fl-display mx-column mxcl-right">
+                <span style="margin-bottom: 11px; margin-top: 0px;">Input Series of Numbers:</span>
+                <span style="margin-top: 2px;;">Max:</span>
+                <span>Min:</span>
+                <span>Sum:</span>
+                <span>Average:</span>
+                <span>Reverse Order:</span>
+            </div>
+            <div class="fl-display mx-column mxcl-left">
+                <input id="input" onkeydown="minMax()" type="text" placeholder="Enter space separated values" size="30">                
+                <span id="min">minval</span>
+                <span id="max">maxval</span>
+                <span id="sum">sumval</span>
+                <span id="avg">average</span>
+                <span id="reverse">reverse</span>
+            </div>
+        </div>
+
+    </section>
 
     <footer>        
-    </footer>   
+    </footer>  
+    <script src="/scripts/minMax.js"></script>
+    <script src="/scripts/theme.js"></script>
 </body>
 
 </html>
