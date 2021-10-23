@@ -1,87 +1,66 @@
-let toggle = true;
+let toggle = false;
+
+let htmlElement = document.getElementById("textArea");
 
 const clearit = () => {
-    document.getElementById("textArea").value = "";
+    htmlElement.value = "";
 };
 
 const toggleCase = () => {
     if (toggle) {
-        let x = document.getElementById("textArea").value.trim().toLowerCase();
-        document.getElementById("textArea").value = x;
+        let x = htmlElement.value.toLowerCase();
+        htmlElement.value = x;
         toggle = !toggle;
     } else {
-        let x = document.getElementById("textArea").value.trim().toUpperCase();
-        document.getElementById("textArea").value = x;
+        let x = htmlElement.value.toUpperCase();
+        htmlElement.value = x;
         toggle = !toggle;
     }
 };
 
 const sortAll = () => {
     let array = [];
-    document
-        .getElementById("textArea")
-        .value.split("\n")
-        .forEach((element) => {
-            let temp = element.trim();
-            if (temp != "") array.push(element.trim());
-        });
+    htmlElement.value.split("\n").forEach((element) => {
+        array.push(element);
+    });
 
-    document.getElementById("textArea").value = array.sort().join("\n");
+    htmlElement.value = array.sort().join("\n");
 };
 
 const reverseAll = () => {
     let array = [];
-    document
-        .getElementById("textArea")
-        .value.split("\n")
-        .forEach((element) => {
-            let temp = element.trim();
-            if (temp != "") array.push(element.trim());
-        });
+    htmlElement.value.split("\n").forEach((element) => {
+        array.push(element);
+    });
 
-    document.getElementById("textArea").value = array.reverse().join("\n");
+    htmlElement.value = array.reverse().join("\n");
 };
 
 const stripBlank = () => {
     let array = [];
-    document
-        .getElementById("textArea")
-        .value.split("\n")
-        .forEach((element) => {
-            let temp = element.trim();
-            if (temp != "") array.push(element.trim());
-        });
+    htmlElement.value.split("\n").forEach((element) => {
+        let temp = element.trim();
+        if (temp != "") array.push(temp);
+    });
 
-    document.getElementById("textArea").value = array.join("\n");
+    htmlElement.value = array.join("\n");
 };
 
 const addNum = () => {
     let array = [];
-    document
-        .getElementById("textArea")
-        .value.split("\n")
-        .forEach((element, index) => {
-            let temp = element.trim();
-            if (temp != "") array.push(index + 1 + ". " + temp);
-        });
+    htmlElement.value.split("\n").forEach((element, index) => {
+        array.push(index + 1 + ". " + element);
+    });
 
-    document.getElementById("textArea").value = array.join("\n");
+    htmlElement.value = array.join("\n");
 };
 
 const shuffle = () => {
-    let array = document.getElementById("textArea").value.split("\n");
+    let array = htmlElement.value.split("\n");
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
 
-    document.getElementById("textArea").value = array.join("\n");
+    htmlElement.value = array.join("\n");
 };
-
-function suffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
