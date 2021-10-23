@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="/styles/master.css">
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Hero Converter</title>
 </head>
 
 <body>
@@ -15,10 +15,29 @@
             <li><a class="navbar-item" href="./min_max.html">Min-Max</a></li>
             <li><a class="navbar-item" href="./magic.html">Magic !</a></li>
         </ul>
-    </header>    
+    </header>
+
+    <section class="convert-section">        
+        <div class="convert-bar">
+            <div>            
+                <span>Convert</span>
+                <input onKeyDown="handleKey()" id="convert-input" type="number" placeholder="Enter Value">
+            </div>
+            <div>            
+                <select name="cars" id="convert">
+                    <option value="1">lbs to kg</option>
+                    <option value="2">kg to lbs</option>                
+                </select>
+            </div> 
+            <button id="go-button" onclick="convert()"> Go! </button >
+            <span id="result">                
+            </span>
+        </div>       
+    </section>
 
     <footer>        
-    </footer>   
+    </footer>
+    <script src="/scripts/converter.js"></script> 
 </body>
 
 </html>
