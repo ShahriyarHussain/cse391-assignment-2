@@ -257,3 +257,25 @@ select:hover {
     margin-top: 10px;
     font-size: 25px;
 }
+
+/* min-max styling ends here */
+
+.mx-row button {
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(252, 252, 252);
+}
+
+.mx-row button:hover {
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+}
+
+#textArea {
+    border: .5px solid #000000;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 10px;
+}

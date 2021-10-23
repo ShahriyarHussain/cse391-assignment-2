@@ -18,15 +18,29 @@
         </ul>
     </header> 
     
-    <section>
-        <textarea spellcheck="false" data-gramm="false" style="width:200px; height:200px;">
-        </textarea>
+    <section class="fl-display mx-section">
+        <div class="fl-display mx-inner mx-column">
+            <h1> Magic !</h1>
+            <textarea id="textArea" spellcheck="false" data-gramm="true" cols="80" rows="15">            
+            </textarea>
+            <div class="fl-display mx-row">
+                <button onclick="clearit()">Clear</button>
+                <button onclick="capitalize()">Capitalize</button>
+                <button onclick="sortAll()">Sort</button>
+                <button onclick="reverseAll()">Reverse</button>
+                <button onclick="stripBlank()">Strip Blank</button>
+                <button onclick="addNum()">Add Numbers</button>
+                <button onclick="shuffle()">Shuffle</button>
+            </div>
+        </div>
     </section>
+    
 
     <footer>        
-    </footer>   
+    </footer>     
+    <script src="/scripts/magic.js"></script>
     <script src="/scripts/theme.js"></script>
-    <script src="/"></script>
+    
 </body>
 
 </html>
