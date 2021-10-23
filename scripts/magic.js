@@ -1,5 +1,4 @@
 let toggle = false;
-
 let htmlElement = document.getElementById("textArea");
 
 const clearit = () => {
